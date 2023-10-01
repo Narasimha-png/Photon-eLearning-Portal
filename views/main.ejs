@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Photon eLearning Platform" content="Photon eLearning Platform(EAPCET). It includes Resources, Live Tests ,Instant Results and Maintains Student Profile with Written Tests.">
+    <meta name="Photon eLearning Platform" content="photon elearning platform(EAPCET). It includes Resources, Live Tests ,Instant Results and Maintains Student Profile with Written Tests.">
+    <meta name="Photon EAPCET Cracker" content="This is a eLearning Platform to crack EAPCET. It includes Resources, Live Tests ,Instant Results and Maintains Student Profile with Written Tests.">
+    <meta name="Free EAPCET training" content="This is a eLearning Platform to crack EAPCET. It includes Resources, Live Tests ,Instant Results and Maintains Student Profile with Written Tests.">
+    <meta name="Get EAPCET training for FREE" content="This is a eLearning Platform to crack EAPCET. It includes Resources, Live Tests ,Instant Results and Maintains Student Profile with Written Tests.">  
+    <meta name="Crack AP EAMCET for FREE" content="Crack AP EAPCET with Photon a eLearning Platform to crack EAPCET. It includes Resources, Live Tests ,Instant Results and Maintains Student Profile with Written Tests.">
+    <meta name="Photon | EAMCET Cracker for free" content="EAMCET previous Year question Papers - Photon. It includes Resources, Live Tests ,Instant Results and Maintains Student Profile with Written Tests.">
+    <meta name="GET EAMCET Training for FREE" content="EAMCET Training for FREE-Photon. It includes Resources, Live Tests ,Instant Results and Maintains Student Profile with Written Tests.">
+    <meta name="GET EAPCET Training for FREE" content="AP EAPCET Training for FREE-Photon. It includes Resources, Live Tests ,Instant Results and Maintains Student Profile with Written Tests.">
+    <meta name="AP EAMCET Training for FREE" content="AP EAMCET Training for FREE Photon. It includes Resources, Live Tests ,Instant Results and Maintains Student Profile with Written Tests.">
+    <meta name="GET EAMCET Training for FREE" content="A boon for Intermediate Students to Creack EAMCET. It includes Resources, Live Tests ,Instant Results and Maintains Student Profile with Written Tests.">
+    <meta name="GET EAMCET Training for FREE" content="EAMCET Training for FREE Photon. It includes Resources, Live Tests ,Instant Results and Maintains Student Profile with Written Tests.AP Intermediate Ap inter">
+    <meta name="GET EAMCET Training for FREE" content="Photon eLearning Platform. It includes Resources, Live Tests ,Instant Results and Maintains Student Profile with Written Tests.MANABADI SAKSHI EAMCET ">
+
+    <title>Photon eLearning Platform</title>
+    <link rel="stylesheet" href="main.css">
+   <link rel="website icon" type="png" href="photonlogo.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  </head>
+  <body>
+    <div id="guestsubs">
+      <% if( guest ) { %>
+        <div class="vh-100 d-flex justify-content-center align-items-center">
+          <div class="card col-md-4 bg-white shadow-md p-5">
+              <div class="mb-4 text-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="text-success" width="75" height="75" fill="currentColor"
+                      class="bi bi-check-circle" viewBox="0 0 16 16">
+                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                      <path
+                          d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+                  </svg>
+              </div>
+              <div class="text-center">
+                  <h1><%= note %></h1>
+                  <p><%=description%> </p>
+                  
+                     
+                      <button onclick="hideinfo()" class="btn btn-outline-success">Ok</button>
+                  
+  
+              </div>
+          </div>
+      </div>
+<%}%>
+    </div>
+    <div id="preloader">
+      <img src="Walk.gif" alt="">
+    </div>
+    <nav id="nav1" class="navbar navbar-expand-lg bg-body-tertiary">
+       <div class="bignav">
+        <h1>Photon</h1>
+        <ul id="bigul">
+            
+            <li>
+               <a style="color: blue; text-decoration: underline;" class="anchor" href="/">Home</a>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <button onclick="showCourses()" id="coursesbtn">Student Of the Year</button>
+                    <ul id="licourses" class="dropdown-menu">
+                      <li><a class="dropdown-item" href="/studentoftheyearmpc">MPC</a></li>
+                      <li><a class="dropdown-item" href="/studentoftheyearbipc">BiPC</a></li>
+                     
+                    </ul>
+                  </div>
+            </li>
+            
+            <li>
+                <a class="anchor" href="/login">Student/Student Login</a>      
+            </li>
+            <li>
+                <a class="anchor" href="/contactus">Contact Us</a>
+                
+            </li>
+            <li> <a onclick="changetheme()"  href=""> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-stars" viewBox="0 0 16 16">
+                <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z"/>
+                <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+              </svg></a></li>
+        </ul>
+       </div>
+      </nav>
+      <nav id="nav2" class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">Photon</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Photon Learning Platform</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/">Home</a>
+                </li>
+                
+                <li class="nav-item dropdown">
+                  <a  onclick="mobshowCourses()" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Student Of The Year
+                  </a>
+                  <ul id="moblicourses"  class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/studentoftheyearmpc">M P C</a></li>
+                    <li><a class="dropdown-item" href="/studentoftheyearbipc">BiPC</a></li>
+                    
+                   
+                  </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/login">Student/Parent Login</a>
+
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/contactus">ContactUs</a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><svg style="color: blue;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-stars" viewBox="0 0 16 16">
+                        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z"/>
+                        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+                      </svg> Toggle Theme</a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+      <div id="welcomeimg">
+        <div>
+        <h1 class="weltext">Welcome to Photon </h1>
+      </div>
+      <div>
+        <h2 style="color: white;">EAPCET e-learning platform</h2>
+      </div>
+      <div id="intro">
+    
+        <h1 id="content"></h1>
+        
+      <h1 id="smile"> :)</h1>
+
+    
+
+    </div>
+        
+      </div>
+      <div id="main-announce">
+      <div id="announcement">
+        <div>
+        <h4>Alert</h4>
+      </div>
+        <h4> We are trying to improve quality of questions</h4>
+      </div>
+    </div>
+      <div class="p-3 mb-2 bg-secondary text-white" id="courseslist">
+        <p id="coursetext" >Student Of The Year</p>
+        <div id="courses">
+          <div id="mpc">
+            <div class="border-0">
+            MPC
+          </div>
+            <img class="vivastock" src="student.jpg" alt="">
+            <button onclick="location.href = '/studentoftheyearmpc'" type="button" class="btn btn-outline-success">Know More</button>
+          </div>
+          <div id="bipc">
+            <div>
+            BiPC
+          </div>
+            <img class="vivastock" src="student.jpg" alt="">
+            <button onclick="location.href = '/studentoftheyearbipc'" type="button" class="btn btn-outline-success">Know More</button>
+          </div>
+          
+
+        </div>
+
+      </div>
+      <div class="maindiscriptor">
+      
+      <div class="discriptor">
+        <img src="madhusir.jpg" alt="">
+        <h4>Madhukar Reddy</h4>
+        <h5>Maths Lecturar</h5>
+        <p>This site is boon for students who are searching for resources to crack EAPCET. I like the DashBoard which stores all previously written exams which helps to review our progress and one can reattempt the same exam for any number of times.  </p>
+      </div>
+      <div class="discriptor">
+        <img src="girisir.jpg" alt="">
+        <h4>Girish Nallagutla</h4>
+        <h5>Maths Lecturar</h5>
+        <p>I like this site very much.In this site there is a program called STUDENT OF THE YEAR which is really good, let me explain the program - A student can mail the resources he has, That resources are published and student is awarded with Student Of The Year tag. Grab it </p>
+      </div>
+      <div class="discriptor">
+        <img src="me2.jpg" alt="">
+        <h4>S.Sri Lakshmi Narasimha</h4>
+        <h5>Photon - Developer</h5>
+        <p>This Photon site built to help rural student who are lagging off, by providing video resources (YouTube Links) , live tests , instant results and previous records . Kindly mailus your views and improvements of the site, Your responses are considered </p>
+      </div>
+    </div>
+
+   
+
+    <div class="footer">
+      <div class="foot2">
+        <h4>
+          follow Us
+        </h4>
+        <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+          <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+        </svg> Instagram</a>
+        <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+          <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+        </svg> LinkedIn</a>
+        <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+          <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+        </svg> YouTube</a>
+      </div>
+      <div class="foot3">
+        <h4>
+          ContactUs
+        </h4>
+        <a style="text-decoration: underline;" href="mailto:photonelearningplatform@gmail.com"> photonelearningplatform@gmail.com </a>
+        <a href="https://www.instagram.com/narasimha_tiger_/">Instagram : narasimha_tiger_</a>
+        <a href="https://www.linkedin.com/in/narasimha-settipalli-160061228">LinkedIn : Narasimha Settipalli</a>
+      </div>
+      <div class="foot1">
+       <h4 style="text-align: center;">Special Thanks </h4>
+       <p> I wanna mention Giri Sir and Madhu Sir , Thanks for your support and love towards the Students and Huge respect towards your passion towards teaching.  </p>
+      </div>
+      
+    </div>
+    <div id="updatefooter">
+      <p style="text-align: center; padding: 10px;">For any Complaints and Queries <a href="mailto:photonelearningplatform@gmail.com"> mail Us</a></p>
+
+      <h4  style="text-align: center;">Subscribe to Us for faster Updates</h4>
+      <form method="post"  id="updateform" >
+        <div  class="form-floating mb-3">
+          <input name="email" id="input1" type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">Email address</label>
+        </div>
+      <button  class="btn btn-primary">SUBMIT</button>
+    </form>
+    <div id="content"></div>
+      <p style="text-align: center;">Developed by Settipalli Sri Lakshmi Narasimha</p>
+      <div id="devdetails">
+        <p>Write your comments & Suggestions on </p>
+    <div>
+    <a href="https://www.instagram.com/narasimha_tiger_/"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+      <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+    </svg></a>
+    <a href="https://www.linkedin.com/in/narasimha-settipalli-160061228"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+      <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+    </svg> </a>
+    <a href="mailto:narasimhas9490@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+      <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z"/>
+      <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z"/>
+    </svg></a>
+  </div>
+  </div>
+
+    </div>
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="main.js">
+    
+
+    </script>
+    <script src="mainanimate.js"></script>
+    
+  </body>
+</html>

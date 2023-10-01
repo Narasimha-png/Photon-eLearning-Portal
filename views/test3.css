@@ -1,0 +1,174 @@
+#nav{
+    position: relative;
+    display: flex;
+    background-color: #e3f2fd;
+    align-items: center;
+    padding: 0.5rem;
+}
+#title{
+    margin-left: 20%;
+}
+#lastset{
+    position: absolute;
+    right: 10px;
+}
+#time{
+    display: flex;
+    
+    position: absolute;
+    right: 7rem;
+    top: 10px;
+    
+}
+#menubtn{
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    left: 1rem;
+}
+.QuestionButtons1_160{
+    width: 45px;
+    height : 45px;
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    border: 1px solid lightgrey;
+    
+
+}
+
+
+@media (min-width: 768px) {
+
+    #paper{
+        width: 40vw;
+        margin-left: 20%;
+    }
+    #questionimg{
+        width: 40vw;
+     }
+    label {
+        width: 100%;
+    }
+   
+    .opt{
+        
+        width: 80%;
+        max-height: 10vh;
+    }
+}
+@media (max-width: 767px) {
+    #questionimg{
+        width: 95vw;
+     }
+    label {
+        width: 100%;
+    }
+   
+    .opt{
+        
+        width: 80%;
+         max-height: 10vh;
+    }
+    
+}
+
+#maths , #physics , #chemistry , #showelements{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content:center;
+    flex-wrap: wrap;
+
+}
+#markreview{
+    display: flex;
+    justify-content: end;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+
+#svgdiv{
+    background-color: #e3f2fd;
+}
+
+.collapse{
+    margin: 10px 0px 10px 0px;
+}
+.d-inline-flex{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+#btn1 , #btn2 , #btn3{
+    width: 100%;
+    margin-top: 10px;
+
+}
+#attempted , #unattempted , #review , #unvisited{
+    width: 130px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid gray;
+    border-radius: 5%;
+}
+#attempted > div  {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: green;
+}
+#unattempted > div{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: red;
+    border: 1px solid lightgray;
+
+}
+ #review > div {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: blue;
+    border: 1px solid lightgray;
+
+ }
+ #unvisited > div{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid lightgray;
+ }
+ #testanalysis{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem ;
+ }
+ #showelements > p{
+    color: black;
+ }
+ ul{
+    list-style: none;
+ }
+ ul > li{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#ctrlbtns{
+    margin: 1rem 5% 0px 2%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+#question{
+    display: flex;
+    align-items: center;
+}

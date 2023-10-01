@@ -1,0 +1,71 @@
+#nav{
+    position: relative;
+    display: flex;
+    background-color: #e3f2fd;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+}
+#menubtn{
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    left: 1rem;
+}
+
+#studydiv{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#details{
+    margin-left: 1em;
+}
+#studyimg{
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+}
+.fee{
+    width: 150px;
+    height: 150px;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+}
+#feedetails{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#navitems{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+#navitems a {
+    color : gray;
+    text-decoration: none;
+}
+#myAlert{
+    animation-name: alert ;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+
+}
+@keyframes alert {
+    
+    0%{
+        transform: translateX(-400%);
+    }
+    50%{
+        transform: translateX(0%);
+    }
+   
+}

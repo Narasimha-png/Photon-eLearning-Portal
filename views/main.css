@@ -1,0 +1,385 @@
+#intro{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: 400;
+}
+html{
+    scroll-behavior: smooth;
+}
+#smile{
+    padding: 10px;
+}
+#nav1 , #nav2{
+    
+    margin: 0px;
+}
+
+
+#welcomeimg {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   gap: 2rem;
+    flex-wrap: wrap;
+    height: 91vh;
+    background-image: url("dawn-1840298_1280.jpg");
+    background-position: center;
+    background-size: 100% 100%; 
+    background-repeat: no-repeat;
+
+}
+
+@keyframes Announce {
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes Back {
+    0%{
+        background-image: url("Quotation-Abdul-Kalam-Confidence-and-Hard-work-is-the-best-medicine-to-kill-130-33-56.jpg");
+        
+    }
+    50%{
+        background-image: url("SC1.jpg");
+    }
+    100%{
+        background-image: url("study.jpg");
+    }
+    
+}
+@keyframes Back2 {
+    0%{
+        transform: scale(3);
+    }
+    
+}
+
+
+@media (min-width : 1024px ) {
+    #main-announce{
+        overflow: hidden;
+    }
+    #announcement {
+        height: 4vw;
+        
+        display: flex;
+        gap: 2rem;
+        font-weight: 600;
+        align-items: center;
+        animation: Announce 10s linear infinite;
+    }
+    #announcement > div > h4{
+        color: red;
+    }
+#nav1{
+    display: block;
+}
+#nav2{
+    display: none;
+}
+#corosel1{
+    margin-top: 0rem;
+}
+    
+}
+@media (max-width : 1023px) {
+    #main-announce{
+        overflow: hidden;
+    }
+    #announcement {
+        height: 15vw;
+        
+        display: flex;
+        gap: 2rem;
+        font-weight: 600;
+        align-items: center;
+        animation: Announce 15s linear infinite;
+    }
+    #announcement > div > h4{
+        color: red;
+    }
+    #nav1{
+        display: none;
+    }
+    #nav2{
+        display: block;
+    }
+    #corosel1{
+        margin-top: 4em;
+    }
+    .discriptor{
+        margin-top: 4rem;
+    }
+    #welcomeimg{
+        margin-top: 3rem;
+    }
+    
+}
+#images{
+    display: flex;
+    
+}
+
+.scrollimg{
+    
+    width: 100vw;
+    height: 80vh;
+}
+#img1 , #img2 , #img3{
+    padding: 2rem;
+}
+#images::-webkit-scrollbar { width: 0 !important }
+#images { -ms-overflow-style: none; }
+#bigul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.bignav{
+    padding: 0px 20px 0px 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#coursesbtn:hover{
+    #licourses{
+        display: block;
+    }
+}
+.anchor{
+    color: black;
+    text-decoration: none;
+
+}
+#coursesbtn{
+    background-color: transparent;
+    border: none;
+}
+.anchor:hover , #coursesbtn:hover{
+    color:blue;
+text-decoration: underline;
+transition: 0.3s ease ;
+}
+.navimg{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+}
+.discriptor img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+}
+.discriptor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 2rem;
+    
+}
+#welcomeimg{
+    padding: 1px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.weltext{  
+    font-weight: 800;
+    
+    font-size: 3rem;
+    padding: 2rem;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    animation-name: anime1;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+}
+.weltextp{
+    position: absolute;
+    font-size: 2rem;
+    top: 65%;
+    color: black;
+}
+#welimg{
+    
+    width: 97vw;
+    height: 90vh;
+}
+#coursetext{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.discriptor p {
+    padding: 2rem;
+}
+.maindiscriptor{
+    display: flex;
+    padding: 2rem;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+#courseslist{
+   padding: 0px;
+    background-color: #222;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+@keyframes anime1 {
+    0%{
+        transform: translateX(-400%);
+    }
+
+}
+
+#mpc , #bipc{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0px 15px 30px 0px rgba(0,0,0,0.25);
+
+}
+#mpc > div , #bipc > div {
+    width: 100%;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    
+}
+#mpc > button , #bipc > button {
+    width: 100%;
+    background-color: rgb(66, 66, 250);
+    color: white;
+}
+#mpc img , #bipc img {
+   max-width: 300px;
+}
+#courses{
+    display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: center;
+     gap: 2rem ;
+}
+
+#carouselExampleDark{
+    padding: 2.4rem;
+    
+}
+#alumini1 , #alumini2 , #alumini3{
+    width: 800px;
+    height: 500px;
+}
+.foot1 > p , .foot3 > p {
+    font-size: 13px;
+    padding: 0px;
+}
+.foot1 , .foot3 {
+    padding: 2rem;
+    min-width: 300px;
+  max-width: 5rem;
+    
+}
+.foot2{
+    padding: 2rem;
+  min-width: 300px;
+  max-width: 5rem;
+}
+.foot1 > p {
+    font-weight: 10px;
+    font-size: 17px;
+}
+
+.footer{
+    padding: 7px;
+    background-color: lightgrey;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+iframe{
+    width: 50vw;
+    height: 40vh;
+}
+.footer > div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer > div > a {
+    color : black;
+    text-decoration: none;
+}
+
+#updateform{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+}
+#updatefooter{
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+   
+
+}
+#input1{
+    width: 50vw;
+}
+#preloader{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top:  0px;
+    background-color: white;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#devdetails{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+#devdetails > div{
+    display: flex;
+    gap: 1rem ;
+}
+

@@ -1,0 +1,19 @@
+#myAlert {
+    position: fixed;
+    right: 2%;
+    left: 2%;
+    top: 15%;
+    display: none; /* Initially hidden */
+}
+
+body{
+    overflow: hidden;
+}
+@keyframes alert {
+    0%{
+        transform: translateX(400%);
+    }
+    50%{
+        transform: translateX(100%);
+    }   
+}
