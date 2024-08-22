@@ -151,13 +151,11 @@ app.get('/contactus' , ( req , res ) =>{
 
 app.get('/mocktests', async (req, res) => {
     console.log(email);
-    if (email != null) {
+   
         const group = await mongo.getbranch(email);
         const testarray = await mongo.listtests(group);
         res.render('mocktest', { email: email, testarray: testarray });
-    }
-    else
-        res.send('Please Login to Continue login here <a href="/login">Click me</a>');
+    
 })
 app.post('/logindetails', async (req, res) => {
     if (req.body.email == null)
