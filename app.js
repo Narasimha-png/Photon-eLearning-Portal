@@ -131,7 +131,7 @@ app.post('/', async (req, res) => {
 });
 
 app.get('/login', (req, res) => {
-
+    
     res.render('login');
 });
 
@@ -165,8 +165,11 @@ app.post('/logindetails', async (req, res) => {
     console.log(email + password)
     const validation = await mongo.validatelogin(email, password);
     console.log(validation);
-    if (validation)
+    if (validation){
+        email = req.body.email.trim() ;
         res.send("valid");
+        
+    }
     else
         res.send("not Authorized Person");
 });
