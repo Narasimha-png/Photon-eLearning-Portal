@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 
-const port = process.env.PORT || 4001;
+const port = process.env.PORT || 7001;
 const path = require('path');
 const { json } = require("express/lib/response");
 const { name } = require("ejs");
@@ -131,7 +131,7 @@ app.post('/', async (req, res) => {
 });
 
 app.get('/login', (req, res) => {
-    
+
     res.render('login');
 });
 
@@ -151,11 +151,13 @@ app.get('/contactus' , ( req , res ) =>{
 
 app.get('/mocktests', async (req, res) => {
     console.log(email);
-   
+    if (email != null) {
         const group = await mongo.getbranch(email);
         const testarray = await mongo.listtests(group);
         res.render('mocktest', { email: email, testarray: testarray });
-    
+    }
+    else
+        res.send('Please Login to Continue login here <a href="/login">Click me</a>');
 })
 app.post('/logindetails', async (req, res) => {
     if (req.body.email == null)
@@ -165,11 +167,8 @@ app.post('/logindetails', async (req, res) => {
     console.log(email + password)
     const validation = await mongo.validatelogin(email, password);
     console.log(validation);
-    if (validation){
-        email = req.body.email.trim() ;
+    if (validation)
         res.send("valid");
-        
-    }
     else
         res.send("not Authorized Person");
 });
